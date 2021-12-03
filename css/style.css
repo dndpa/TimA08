@@ -202,7 +202,7 @@ footer {
 }
 
 .email-footer a {
-    color: darkorange;
+    color: #fcd549;
     font-size: 25px;
 }
 .email-footer img {
@@ -219,10 +219,11 @@ footer {
 .copyright {
     float: left;
     margin-top: 50px;
+    margin-bottom: 80px;
     font-size: 20px;
 }
 .copyright span {
-    color: darkorange;
+    color: #fcd549;
 
 /*=================================================
     Responsive (Notebook, Tablet, Mobile Phone)
@@ -344,6 +345,62 @@ footer {
   /*-----------------------------
      Footer
   ------------------------------*/
+    .copyright {
+        font-size: 15px
+    }
+
+    .container-footer {
+        margin-top: 30px;
+    }
+    .wrapper-footer h3 {
+        font-size: 25px;
+    }
+
+    .email-footer a {
+        font-size: 17px;
+    }
+
+    .email-footer img {
+        width: 20px;
+    }
+    
+    .facebook {
+        margin-right: 8px;
+    }
+    .facebook img {
+        width: 38px;
+    }
+    .instagram {
+        margin-left: 8px;
+    }
+
+    .twitter img {
+        width: 38px;
+    }
+    .instagram img {
+        width: 38px; 
+    }
+
+    .wrapper-footer {
+        padding-top: 13px;
+        padding-bottom: 10px;
+    }
+
+    .email-footer {
+        padding-bottom: 15px;
+    }
+
+    footer {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5px;
+    }
+
+    .copyright {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+} 
 }
 
 @media (max-width: 576px) {
@@ -374,4 +431,62 @@ footer {
   /*-----------------------------
      Footer
   ------------------------------*/
+    .copyright {
+    font-size: 10px;
+}
+
+.container-footer {
+    margin-top: 15px;
+}
+.wrapper-footer h3 {
+    font-size: 20px;
+}
+
+.wrapper-footer a {
+    font-size: 10px;
+}
+
+.email-footer a {
+    font-size: 10px;
+}
+
+.email-footer img {
+    width: 10px;
+}
+
+.facebook {
+    margin-right: 5px;
+}
+.facebook img {
+    width: 26px;
+}
+.instagram {
+    margin-left: 5px;
+}
+
+.twitter img {
+    width: 26px;
+}
+.instagram img {
+    width: 26px; 
+}
+
+.wrapper-footer {
+    padding-top: 10px;
+    padding-bottom: 7px;
+}
+
+.email-footer {
+    padding-bottom: 10px;
+}
+footer {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 3px;
+}
+
+.copyright {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 }
