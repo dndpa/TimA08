@@ -27,7 +27,7 @@ Terdapat 5 orang peserta yang terlibat dalam tim ini, yaitu :
 
 ## Release Date
 
-November 2021
+Desember 2021
 
 ## Version
 
