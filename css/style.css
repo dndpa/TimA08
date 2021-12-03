@@ -28,7 +28,6 @@ html {
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
-  position: relative;
 }
 
 section {
@@ -49,7 +48,6 @@ a {
   justify-self: center;
   margin: 0 auto;
   max-width: 1320px;
-  /* border: var(--yellow) 3px solid; */
 }
 
 .title {
@@ -134,13 +132,14 @@ a {
      Footer
 ------------------*/
 
-/*------------------
+/*-------------------------------------------------
      Responsive
-------------------*/
+---------------------------------------------------*/
 
-/*  Tablets */
+/*  Notebook */
 @media (max-width: 1200px) {
   .container {
+    max-width: 1140px;
     margin: 0 auto;
     justify-content: center;
   }
@@ -176,7 +175,7 @@ a {
 ------------------*/
 }
 
-/* Tables */
+/* Tablets */
 @media (max-width: 992px) {
   .container {
     max-width: 960px;
@@ -252,41 +251,6 @@ a {
 @media (max-width: 576px) {
   .container {
     max-width: 540px;
-  }
-
-  /*------------------
-      Header & Navbar
-------------------*/
-
-  /*------------------
-     Portfolio
-------------------*/
-
-  /*------------------
-     Testimonials
-------------------*/
-
-  /*------------------
-     Contact
-------------------*/
-
-  /*------------------
-     Footer
-------------------*/
-}
-
-/* Mobile Phone */
-@media (max-width: 670px) {
-  section {
-    margin-top: 0;
-    margin-bottom: 30px;
-  }
-
-  .container {
-    max-width: 640%;
-    margin: 0 auto;
-    height: auto;
-    padding: 30px;
   }
 
   /*------------------
