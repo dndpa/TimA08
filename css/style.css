@@ -168,6 +168,61 @@ a {
 /*-----------------------------
   Footer
 ------------------------------*/
+footer {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.container-footer {
+    background-color:black;
+    margin-top: 60px;
+}
+
+.wrapper-footer {
+    padding-top: 15px;
+    padding-bottom: 33px;
+}
+.wrapper-footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.wrapper-footer h3 {
+    size: 40px;
+    font-size: 30px;
+    color: white;
+}
+
+.email-footer {
+    padding-bottom: 30px;
+}
+
+.email-footer a {
+    color: darkorange;
+    font-size: 25px;
+}
+.email-footer img {
+    width: 30px;
+}
+
+.facebook {
+    margin-right: 10px;
+}
+.instagram {
+    margin-left: 10px;
+}
+
+.copyright {
+    float: left;
+    margin-top: 50px;
+    font-size: 20px;
+}
+.copyright span {
+    color: darkorange;
 
 /*=================================================
     Responsive (Notebook, Tablet, Mobile Phone)
