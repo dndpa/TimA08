@@ -20,7 +20,7 @@ Tema Webiste yang diambil adalah Portfolio seorang fotografer dengan karakterist
 Terdapat 5 orang peserta yang terlibat dalam tim ini, yaitu :
 
 1. Abdul Rohman Sani
-2. Adinda
+2. Adinda Putri Audyna
 3. Bogie Satria Sakti
 4. Faiza Pramudia A
 5. Muhamad Sadikin
