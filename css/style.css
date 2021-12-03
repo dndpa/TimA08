@@ -1,20 +1,36 @@
-/*=============================================
+/*-----------------------------------------
     Project Name: Proyek Tim A08 HTML & CSS
     Version: 1.0
     Author: TIM A08
     Devloped by: TIM A08
-    Relase Date: Desember 2021
-=============================================*/
+    Relase Date: November 2021
+--------------------------------------------*/
 
-/*----------------------------
-  Global Styles
+/*---------------------------
+      Table of Contents
+    -------------------------
+
+    01- Global Styles
+    02- Header & Navbar
+    03- Skills 
+    04- Portfolio
+    05- Testimonial
+    06- Contact
+    07- Footer
+
 ----------------------------*/
+
+/*--------------------------
+      Global Styles
+---------------------------*/
 
 :root {
   --black: #000;
+  --gray: #a6a6a6;
   --yellow: #fcd549;
-  --grey: #4a4949;
+  --text-color: #4a4949;
   --white: #fff;
+  --shadow: #0000002f;
 }
 * {
   margin: 0;
@@ -28,12 +44,11 @@ html {
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
-    
+  position: relative;
 }
 
 section {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin: 100px auto;
   width: 100%;
   height: 100%;
 }
@@ -42,14 +57,48 @@ a {
   text-decoration: none;
 }
 
+nav {
+  padding-top: 20px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  margin-left: 30px;
+  font-family: "Poppins", sans-serif;
+  color: var(--black);
+}
+
+nav ul li a:hover {
+  font-weight: bold;
+  color: var(--yellow);
+}
+
+.navbar-icon {
+  display: none;
+  visibility: collapse;
+  width: 0px;
+  height: 0px;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   justify-self: center;
   margin: 0 auto;
+  padding: 0 15px;
   max-width: 1320px;
 }
+/*--------------------------
+      Title & Subtitle
+---------------------------*/
 
 .title {
   font-family: "Poppins", sans-serif;
@@ -60,58 +109,138 @@ a {
 
 .subtitle {
   font-family: "Poppins", sans-serif;
+  color: var(--gray);
   font-size: 23px;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-/*-----------------------------
-  Header & Navbar
------------------------------*/
-
-/*-----------------------------
-  Skills -- by Adinda
------------------------------*/
-.skills-title{
-    text-align: center; 
+.mt-5 {
+  margin-top: 50px;
 }
 
-.skills-title h4{
-    color:darkgrey;
-    margin-bottom: 10px;
+.text-yellow {
+  color: var(--yellow);
 }
 
-.skills-title h1{
-    font-size: 30px;
-    margin-bottom: 30px;
+.text-white {
+  color: var(--white);
+}
+/*--------------------------
+      Header & Navbar
+---------------------------*/
+
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: 30px;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.474);
+  border-radius: 5px;
+  padding: 10px;
+  transition: 0.6s;
 }
 
-.skills-list td {
-    padding: 35px;
+.btn-primary {
+  margin-top: 50px;
+  width: 146px;
+  height: 63px;
+  border-radius: 5px;
+  background-color: var(--black);
+  font-weight: 600;
+  font-size: 18;
+  font-family: "Poppins", sans-serif;
 }
 
-.skills-list a {
-    color: black;
-    font-size: 19px;
+.btn-primary a {
+  color: var(--yellow);
+  display: block;
 }
 
-.skills-list i {
-    background-color: black;
-    font-size:30px;
-    color:white;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 5px;
+.btn-primary:hover {
+  background: var(--yellow);
+  border: var(--yellow);
 }
 
+.btn-primary a:hover {
+  color: white;
+}
 
-/*-----------------------------
-  Portfolio
------------------------------*/
+.profile-desc {
+  margin-top: 100px;
+  font-size: 20px;
+}
 
-/*-----------------------------
-  Testimonials
------------------------------*/
+/*--------------------------
+     Skills
+---------------------------*/
+.skills-header {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.skill-box {
+  border-radius: 20px;
+  margin-bottom: 60px;
+  padding: 30px;
+  height: 316;
+  width: 430px;
+}
+
+.skill-box:hover {
+  box-shadow: 0px 0px 30px var(--shadow);
+  border-radius: 20px;
+}
+
+.skill-icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.skill-icon i {
+  background-color: var(--black);
+  font-size: 30px;
+  color: white;
+  margin-right: 20px;
+  padding: 30px;
+  border-radius: 3px;
+}
+
+.skill-box:hover i {
+  background-color: var(--yellow);
+  color: var(--black);
+}
+
+/*--------------------------
+     Portfolio
+---------------------------*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+}
+.portfolio-img {
+  margin-bottom: 55px;
+  width: 300px;
+  filter: brightness(0.7);
+}
+
+.portfolio-img:hover {
+  filter: brightness(1);
+  transition: all 0.5s linear 0.5s;
+}
+
+.subtitle:hover > .fa-long-arrow-alt-right {
+  padding-left: 10px;
+  transition: all 0.5s linear 0.5s;
+}
+
+/*--------------------------
+     Testimonials
+---------------------------*/
 
 .testimonials {
   background-image: url("../images/bg-testimony.png");
@@ -128,6 +257,7 @@ a {
   color: var(--white);
   margin-bottom: 95px;
 }
+
 .testimony {
   text-align: center;
   background: var(--white);
@@ -147,109 +277,158 @@ a {
 }
 
 .testimony-desc {
-  color: var(--grey);
+  color: var(--text-color);
   padding: 100px 40px 30px 50px;
   font-style: italic;
 }
 
 .testimony-job-title {
   margin-top: 25px;
-  color: var(--grey);
+  color: var(--text-color);
 }
 
 .stars-icon {
   margin-top: 30px;
 }
 
-/*-----------------------------
-  Contact
------------------------------*/
+/*--------------------------
+     Contact
+---------------------------*/
+.contact-box {
+  background-image: url("../images/bg-contact.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 397px;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
 
-/*-----------------------------
-  Footer
-------------------------------*/
+.contact-box {
+  color: var(--white);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-box .email {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 23px;
+  margin: 30px auto;
+}
+
+.contact-box .social-media {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.contact-box .social-media-item {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: var(--white);
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-box .social-media-item a {
+  color: var(--black);
+}
+
+.contact-box .social-media-item:hover i {
+  color: var(--yellow);
+  font-size: 30px;
+}
+
+/*--------------------------
+     Footer
+---------------------------*/
+
 footer {
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 10px;
-    text-align: center;
-    font-family: sans-serif;
+  height: 50px;
+}
+.active {
+  margin: 0 10px;
+  color: var(--yellow);
 }
 
-.container-footer {
-    background-color:black;
-    margin-top: 60px;
+/* -------------------------
+    Button back to Top 
+----------------------------*/
+
+.arrow-down {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  font-size: 50px;
+  margin-top: 100px;
 }
 
-.wrapper-footer {
-    padding-top: 15px;
-    padding-bottom: 33px;
-}
-.wrapper-footer a {
-    color: white;
-    text-decoration: none;
-    font-size: 15px;
+.arrow-down a {
+  color: #b1b1b1;
 }
 
-.wrapper-footer h3 {
-    size: 40px;
-    font-size: 50px;
-    color: white;
-    margin-top: 40px;
-    margin-bottom: 40px;
+.btn-backtop {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  bottom: 150px;
+  right: 70px;
+  bottom: 50px;
+  position: absolute;
+  background: var(--yellow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.email-footer {
-    padding-bottom: 30px;
+.btn-backtop a i {
+  color: var(--white);
+  font-size: 20px;
+  padding-left: 15px;
 }
 
-.email-footer a {
-    color: #fcd549;
-    font-size: 25px;
+.btn-backtop a:hover i {
+  color: var(--black);
 }
-.email-footer img {
-    width: 30px;
-}
+/*---------------------------------------
+     Responsive
+-----------------------------------------*/
 
-.facebook {
-    margin-right: 10px;
-}
-.instagram {
-    margin-left: 10px;
-}
-
-.copyright {
-    float: left;
-    margin-top: 50px;
-    margin-bottom: 80px;
-    font-size: 20px;
-}
-.copyright span {
-    color: #fcd549;
-
-/*=================================================
-    Responsive (Notebook, Tablet, Mobile Phone)
-=================================================*/
-
-/*  Notebook */
+/*  Tablets */
 @media (max-width: 1200px) {
   .container {
-    max-width: 1140px;
     margin: 0 auto;
+    /* border: #fc49c0 solid 3px; */
     justify-content: center;
   }
 
-  /*-----------------------------
-     Header & Navbar
-  -----------------------------*/
+  /* Hero */
+  .hero-container {
+    margin: 0 auto;
+    text-align: center;
+    flex-direction: column-reverse;
+  }
 
-  /*-----------------------------
-     Portfolio
-  -----------------------------*/
+  /* portfolio */
+  .portofolio-header-container {
+    justify-content: space-around;
+  }
 
-  /*-----------------------------
-     Testimonials
-  -----------------------------*/
+  .portfolio-img {
+    width: 180px;
+    margin-bottom: 20px;
+  }
+
+  /* Testimonials */
+
   .testimonials {
     height: auto;
     padding: 100px 0px;
@@ -259,17 +438,9 @@ footer {
     width: 300px;
     margin-right: 10px;
   }
-
-  /*-----------------------------
-     Contact
-  -----------------------------*/
-
-  /*-----------------------------
-     Footer
-  ------------------------------*/
 }
 
-/* Tablets */
+/* Tables */
 @media (max-width: 992px) {
   .container {
     max-width: 960px;
@@ -278,21 +449,36 @@ footer {
     justify-content: center;
   }
 
-  /*-----------------------------
-      Header & Navbar
-  -----------------------------*/
+  /* Hero */
+  .hero-container {
+    margin: 0 auto;
+    text-align: center;
+    flex-direction: column-reverse;
+  }
 
-  /*-----------------------------
-      Skills
-  -----------------------------*/
+  /* Portfolio */
 
-  /*-----------------------------
-     Portfolio
-  -----------------------------*/
+  .portofolio-header-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
 
-  /*-----------------------------
-     Testimonials
-  -----------------------------*/
+  .portfolio-header {
+    justify-content: space-around;
+  }
+
+  .portfolio-img {
+    margin: 0 auto;
+    width: 48%;
+  }
+
+  .row {
+    margin-bottom: 20px;
+  }
+
+  /* Testimonials */
+
   .testimony {
     margin-top: 100px;
     margin-right: 15px;
@@ -310,71 +496,7 @@ footer {
     padding: 30px;
   }
 
-  /*-----------------------------
-     Contact
-  ---------------------------*/
-
-  /*-----------------------------
-     Footer
-  -----------------------------*/
-    .copyright {
-        font-size: 15px
-    }
-
-    .container-footer {
-        margin-top: 30px;
-    }
-    .wrapper-footer h3 {
-        font-size: 40px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
-    .email-footer a {
-        font-size: 17px;
-    }
-
-    .email-footer img {
-        width: 20px;
-    }
-    
-    .facebook {
-        margin-right: 8px;
-    }
-    .facebook img {
-        width: 38px;
-    }
-    .instagram {
-        margin-left: 8px;
-    }
-
-    .twitter img {
-        width: 38px;
-    }
-    .instagram img {
-        width: 38px; 
-    }
-
-    .wrapper-footer {
-        padding-top: 13px;
-        padding-bottom: 10px;
-    }
-
-    .email-footer {
-        padding-bottom: 15px;
-    }
-
-    footer {
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-bottom: 5px;
-    }
-
-    .copyright {
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-} 
+  /* Contact */
 }
 
 @media (max-width: 768px) {
@@ -382,87 +504,97 @@ footer {
     max-width: 720px;
   }
 
-  /*-----------------------------
-     Header & Navbar
-  -----------------------------*/
+  /* Hero */
+  .hero-container {
+    margin: 0 auto;
+    text-align: center;
+    flex-direction: column-reverse;
+  }
 
-  /*-----------------------------
-     Skills
-  -----------------------------*/
+  /* Portfolio */
+  .portofolio-header-container {
+    padding: 0 30px;
+  }
 
-  /*-----------------------------
-     Portfolio
-  -----------------------------*/
+  .portfolio-img {
+    margin: 0 auto;
+    width: 45%;
+  }
 
-  /*-----------------------------
-     Testimonials
-  -----------------------------*/
+  .portfolio-subheader {
+    margin-bottom: 30px;
+  }
+}
 
-  /*-----------------------------
-     Contact
-  -----------------------------*/
+/* Mobile Phone */
+@media (max-width: 670px) {
+  section {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  .container {
+    max-width: 640%;
+    margin: 0 auto;
+    /* border: green solid 3px; */
+    height: auto;
+    padding: 30px;
+  }
 
-  /*-----------------------------
-     Footer
-  ------------------------------*/
-    .copyright {
-        font-size: 15px
-    }
+  .navbar {
+    justify-content: space-around;
+  }
 
-    .container-footer {
-        margin-top: 30px;
-    }
-    .wrapper-footer h3 {
-        font-size: 25px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
+  .navbar-icon {
+    width: 30px;
+    height: 30px;
+    padding-top: 20px;
+    visibility: visible !important;
+    display: inline;
+  }
 
-    .email-footer a {
-        font-size: 17px;
-    }
+  .menu {
+    visibility: collapse;
+    font-size: 0;
+  }
 
-    .email-footer img {
-        width: 20px;
-    }
-    
-    .facebook {
-        margin-right: 8px;
-    }
-    .facebook img {
-        width: 38px;
-    }
-    .instagram {
-        margin-left: 8px;
-    }
+  /* Hero */
+  .hero-container {
+    margin: 0 auto;
+    text-align: center;
+    flex-direction: column-reverse;
+  }
 
-    .twitter img {
-        width: 38px;
-    }
-    .instagram img {
-        width: 38px; 
-    }
+  .profile-picture img {
+    max-width: 300px;
+  }
 
-    .wrapper-footer {
-        padding-top: 13px;
-        padding-bottom: 10px;
-    }
+  .title {
+    font-size: 40px;
+  }
 
-    .email-footer {
-        padding-bottom: 15px;
-    }
+  /* Skills */
+  .skill-box {
+    width: fit-content;
+  }
+  .skill-icon i {
+    margin-right: 10px;
+  }
 
-    footer {
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-bottom: 5px;
-    }
+  /* Portfolio */
 
-    .copyright {
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-} 
+  .portfolio-img {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  /* Contact */
+  .contact-box {
+    margin: 0 20px;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 576px) {
@@ -470,85 +602,16 @@ footer {
     max-width: 540px;
   }
 
-  /*-----------------------------
-     Header & Navbar
-  -----------------------------*/
+  /* Hero */
+  .hero-container {
+    text-align: center;
+    flex-direction: column-reverse;
+  }
 
-  /*-----------------------------
-     Skills
-  -----------------------------*/
+  /* Portfolio */
 
-  /*-----------------------------
-     Portfolio
-  -----------------------------*/
-
-  /*-----------------------------
-     Testimonials
-  -----------------------------*/
-
-  /*-----------------------------
-     Contact
-  -----------------------------*/
-
-  /*-----------------------------
-     Footer
-  ------------------------------*/
-    .copyright {
-    font-size: 10px;
-}
-
-.container-footer {
-    margin-top: 15px;
-}
-.wrapper-footer h3 {
-    font-size: 20px;
-}
-
-.wrapper-footer a {
-    font-size: 10px;
-}
-
-.email-footer a {
-    font-size: 10px;
-}
-
-.email-footer img {
-    width: 10px;
-}
-
-.facebook {
-    margin-right: 5px;
-}
-.facebook img {
-    width: 26px;
-}
-.instagram {
-    margin-left: 5px;
-}
-
-.twitter img {
-    width: 26px;
-}
-.instagram img {
-    width: 26px; 
-}
-
-.wrapper-footer {
-    padding-top: 10px;
-    padding-bottom: 7px;
-}
-
-.email-footer {
-    padding-bottom: 10px;
-}
-footer {
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 3px;
-}
-
-.copyright {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
+  .portfolio-img {
+    margin: 0 auto;
+    width: 80%;
+  }
 }
