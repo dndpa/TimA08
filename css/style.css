@@ -494,6 +494,10 @@ footer {
     padding: 0 30px;
   }
 
+  .porfolio-row {
+    margin-bottom: 20px;
+  }
+
   .portfolio-img {
     margin: 30px auto;
     width: 45%;
@@ -565,6 +569,10 @@ footer {
 
   /* Portfolio */
 
+  .porfolio-row {
+    margin-bottom: 20px;
+  }
+
   .portfolio-img {
     margin: 30px auto;
     width: 80%;
@@ -602,15 +610,18 @@ footer {
     margin-bottom: 30px;
   }
 
-  /* Testimonials */
-  .testimony-header {
-    margin-bottom: 30px;
-  }
-
   /* Portfolio */
+  .porfolio-row {
+    margin-bottom: 20px;
+  }
 
   .portfolio-img {
     margin: 30px auto;
     width: 80%;
+  }
+
+  /* Testimonials */
+  .testimony-header {
+    margin-bottom: 30px;
   }
 }
