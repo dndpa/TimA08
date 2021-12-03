@@ -193,8 +193,10 @@ footer {
 
 .wrapper-footer h3 {
     size: 40px;
-    font-size: 30px;
+    font-size: 50px;
     color: white;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .email-footer {
@@ -315,6 +317,64 @@ footer {
   /*-----------------------------
      Footer
   -----------------------------*/
+    .copyright {
+        font-size: 15px
+    }
+
+    .container-footer {
+        margin-top: 30px;
+    }
+    .wrapper-footer h3 {
+        font-size: 40px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .email-footer a {
+        font-size: 17px;
+    }
+
+    .email-footer img {
+        width: 20px;
+    }
+    
+    .facebook {
+        margin-right: 8px;
+    }
+    .facebook img {
+        width: 38px;
+    }
+    .instagram {
+        margin-left: 8px;
+    }
+
+    .twitter img {
+        width: 38px;
+    }
+    .instagram img {
+        width: 38px; 
+    }
+
+    .wrapper-footer {
+        padding-top: 13px;
+        padding-bottom: 10px;
+    }
+
+    .email-footer {
+        padding-bottom: 15px;
+    }
+
+    footer {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5px;
+    }
+
+    .copyright {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+} 
 }
 
 @media (max-width: 768px) {
@@ -354,6 +414,8 @@ footer {
     }
     .wrapper-footer h3 {
         font-size: 25px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     .email-footer a {
